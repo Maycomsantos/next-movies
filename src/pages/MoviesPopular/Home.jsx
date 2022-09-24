@@ -5,12 +5,15 @@ import {
     Container,
     Movie,
     MovieList
-} from '../styled'
+} from '../styled';
+
+import Header from '../../components/Header';
 
 function Home() {
 
-    const imagePath = 'https://image.tmdb.org/t/p/w500/'
+    const [menuIsVisible, setMenuIsVisible] = useState(true);
 
+    const imagePath = 'https://image.tmdb.org/t/p/w500/'
     const [movies, setMovies] = useState([]);
     // const [searchKey, setSearchKey] = useState("");
 
@@ -31,7 +34,9 @@ function Home() {
     return (
 
         <Container>
+         
             <h2>Filmes Populares:</h2>
+            <Header />
             {/* <form onSubmit={searchMovies}>
                 <input type="text" onChange={(e) => setSearchKey(e.target.value)}></input>
                 <button type="submit">Procurar</button>

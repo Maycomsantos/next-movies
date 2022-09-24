@@ -4,6 +4,7 @@ import './App.css'
 
 import Home from './pages/MoviesPopular/Home';
 
+
 function App() {
   const [count, setCount] = useState(0)
 
