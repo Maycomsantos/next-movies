@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { Container, Button } from '../styled';
 import style from '../style.css';
 import { FaStar } from 'react-icons/fa';
-import Videos from '../../Components/Videos';
 import Comments from '../../Components/Comments';
 import Youtube from 'react-youtube'
 
